@@ -49,6 +49,9 @@ int main(){
     addNode(graph, 3, 1, 1);
     addNode(graph, 3, 4, 1);
     addNode(graph, 3, 5, 1);
+    addNode(graph, 4, 2, 1);
+    addNode(graph, 4, 3, 1);
+    addNode(graph, 4, 5, 1);
     addNode(graph, 5, 3, 1);
     addNode(graph, 5, 4, 1);
     addNode(graph, 5, 6, 1);
