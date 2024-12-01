@@ -6,6 +6,7 @@ void helper(vector<vector<int>>& images, int sr, int sc, int col, vector<vector<
         return;
     }
     images[sr][sc] = col;
+    vis[sr][sc] = true;
     helper(images, sr-1, sc, col, vis, originalcol);
     helper(images, sr, sc-1, col, vis, originalcol);
     helper(images, sr+1, sc, col, vis, originalcol);
@@ -19,6 +20,8 @@ vector<vector<int>> flood_fill(vector<vector<int>>images, int sr, int sc, int co
     helper(images, sr, sc, col, vis, images[sr][sc]);
     return images;
 }
+
+
 
 int main(){
     vector<vector<int>>images{{1,1,1}, {1,1,0}, {1,0,1}};
