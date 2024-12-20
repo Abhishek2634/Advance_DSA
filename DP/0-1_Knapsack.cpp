@@ -15,7 +15,7 @@ int knapsack(vector<int>& val, vector<int>& wt, int W, int n){
     }
 }
 
-//T.c : O(n);
+//T.c : O(n*W)
 int memoisation(vector<int>& val, vector<int>& wt, int W, int n, vector<vector<int>>&dp){
     if(W == 0 || n == 0)return 0;
     if(dp[n][W] != -1)return dp[n][W];
