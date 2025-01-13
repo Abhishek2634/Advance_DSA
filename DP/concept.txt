@@ -1,0 +1,37 @@
+7 important concepts of DP along with questions >>>
+
+1. Fibonacci
+    . Climbing Stairs
+    . Number Factors
+    . Min jumps to reach the end
+    . Min jumps with cost
+    . House thief
+2. 0-1 Knapsack
+    . Subset Sum
+    . Equal Subset Sum Partition
+    . Min subset sum difference
+    . Count of subset sum
+    . Target sum
+3. Unbounded Knapsack
+    . Rod Cutting
+    . Coin change
+    . Min coin change
+    . Max Ribbon Cut
+4. LCS
+    . LCS
+    . Edit distance
+    . Box stacking
+    . LIS
+    . Longest bitonic subsequence.
+    . Subsequence pattern matching
+    . Min add/delete to convert
+5. Kadane Algo (arrays)
+6. Catalan Numbers
+    . No. of BST's
+    . N parenthesis
+    . Convex polygons
+    . Disjoint chords
+    . Catalan triangle
+    . Mountain ranges
+    . Dyck words
+7. D.P on grids (2-D) arrays
