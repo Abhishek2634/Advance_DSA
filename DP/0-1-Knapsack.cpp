@@ -11,7 +11,7 @@ int knapsack(vector<int>& val, vector<int>& wt, int W, int n){
         int ans2 = knapsack(val, wt, W, n-1);
         return max(ans1, ans2);
     } else { // not valid;
-        return knapsack(val, wt, W-wt[n-1], n-1);
+        return knapsack(val, wt, W, n-1);
     }
 }
 
@@ -23,9 +23,9 @@ int memoisation(vector<int>& val, vector<int>& wt, int W, int n, vector<vector<i
     if (wt[n-1] <= W) {
         int ans1 = val[n-1] + memoisation(val, wt, W-wt[n-1], n-1, dp);
         int ans2 = memoisation(val, wt, W, n-1, dp);
-        return max(ans1, ans2);
+        return dp[n][W] =  max(ans1, ans2);
     } else {
-        return memoisation(val, wt, W, n-1, dp);
+        return dp[n][W] = memoisation(val, wt, W, n-1, dp);
     }
 }
 
